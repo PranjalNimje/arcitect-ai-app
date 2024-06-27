@@ -2,8 +2,8 @@
 
 ############################################################################
 
-npx create-react-app architect-ai-project --template typescript
-cd architect-ai-project
+npx create-react-app architect-ai-project --template typescript<br />
+cd architect-ai-project <br />
 created json file -ai-data.json
 npm install -g json-server
 npm run json:server
@@ -35,7 +35,7 @@ npm start
 
 ## Explanation
 
-# 1.
+### 1.
 
 We have a single api that running on json server :
 http://localhost:4000/
@@ -44,31 +44,31 @@ But I am calling api for selected data only.
 Suppose if we click on Insight summary card button , this api will be called :
 http://localhost:4000/insight_summary
 
-# 2.
+### 2.
 
 I have used chart.js react-chartjs-2 for data visualization.
 
-# 3.
+### 3.
 
 On home page, we can select which data we want to view :
 insight_summary, response_times, category_distribution, usage_statistics, user_satisfaction
 It will show the data in different charts.
 
-# 4.
+### 4.
 
 The application is responsive across various media screens.
 
-# 5.
+### 5.
 
 I have also given routing , so when u open a card, suppose Insight summary,
 It will route to http://localhost:3000/insight_summary
 Back button is also available.
 
-# 6.
+### 6.
 
 Made reusable components like - Loader, Header, Heading, all charts.
 
-# 7.
+### 7.
 
 I have made a custom hook which wwill fetch the data from api for selected category :
 insight_summary, response_times, category_distribution, usage_statistics, user_satisfaction.
