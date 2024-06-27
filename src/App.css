@@ -1,0 +1,121 @@
+.Pie {
+  height: 600px;
+  width: 600px;
+  @media (max-width: 668px) {
+    height: 400px;
+    width: 400px;
+  }
+}
+.Bar {
+  height: 50rem;
+  width: 50rem;
+  @media (min-width: 767px) and (max-width: 893px) {
+    height: 25rem;
+    width: 40rem;
+    margin: auto;
+  }
+  @media (min-width: 400px) and (max-width: 767px) {
+    height: 25rem;
+    width: 25rem;
+    margin: auto;
+  }
+  @media (max-width: 400px) {
+    height: 35rem;
+    width: 15rem;
+    margin: auto;
+  }
+}
+.PolarArea {
+  height: 30rem;
+  width: 30rem;
+  @media (max-width: 500px) {
+    height: 25rem;
+    width: 60vh;
+    margin: auto;
+  }
+}
+.Header {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  background: aliceblue;
+  padding: 1.5rem;
+  .HeaderTitle {
+    text-align: center;
+  }
+  .SidebarBtn {
+    height: fit-content;
+    align-self: center;
+  }
+}
+.Sidebar {
+  position: absolute;
+  background: beige;
+  width: 20%;
+}
+.UsageStatisticContainer,
+.InsightSummaryContainer,
+.CateDistrContainer,
+.ResponseTimeContainer,
+.UserSatisfactionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  row-gap: 2rem;
+  .backBtn {
+    align-self: flex-start;
+  }
+  .UsageStatisticChart,
+  .ResponseTimeChart {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .UsageStatisticChart1,
+  .ResponseTimeChart1 {
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    text-align: -webkit-center;
+  }
+  .UsageStatisticChart2,
+  .ResponseTimeChart2 {
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    text-align: -webkit-center;
+  }
+  .ResponseTimeChart {
+    gap: 5rem;
+  }
+}
+
+.InsightSummaryContainer {
+  .th,
+  .td {
+    background: beige;
+  }
+}
+
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem;
+  justify-content: center;
+  .HomeCard {
+    width: 200px;
+    height: 250px;
+    display: grid;
+    margin: 4rem;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  .HomeCard:hover {
+    background-color: beige;
+  }
+  @media (max-width: 557px) {
+    padding: 1rem;
+    justify-content: center;
+  }
+}
